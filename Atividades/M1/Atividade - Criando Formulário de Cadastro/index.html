@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Criando Formulário de Cadastro</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <!---nome'input', email'input', oque te motivou participar do evento'textarea', selecione seu módulo'ddl', cadastre uma senha'inputtypepass' confirme a senha
+            deseja receber novidades em seu email 'sim não label + radio', button submit-->
+            <div>
+                <label for="nome">Por favor, nos conte qual o seu nome</label>
+                <input type="text" placeholder="Seu nome" id="nome" required>
+            </div>
+            <div>
+                <label for="email">Qual o seu melhor E-mail?</label>
+                <input type="email" placeholder="Seu E-mail" id="email" required>
+            </div>
+            <div>
+                <label for="email">O que te motivou a participar do evento?</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Nos conte aqui" required></textarea>
+            </div>
+            <div>
+                <label for="select">De 0 a 10 quanto você daria ao evento?</label>
+                <select name="" id="select">
+                    <option value="">0</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                </select>
+            </div>
+            <div>
+                <label for="senha">Senha que te apresentaram no evento</label>
+                <input type="password" placeholder="Sua senha" id="senha" required>
+            </div>
+            <div>
+                <label for="csenha">Confirme a senha apresentada</label>
+                <input type="password" placeholder="Confirme sua senha" id="csenha" required>
+            </div>
+            <div>
+                <p>Deseja receber novidades sobre o evento em seu e-mail?</p>
+                <section>
+                    <label for="sim">Sim</label>
+                    <input type="radio" id="sim">
+                    <label for="nao">Não</label>
+                    <input type="radio" id="nao">
+                </section>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

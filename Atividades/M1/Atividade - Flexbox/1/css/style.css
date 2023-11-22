@@ -1,0 +1,10 @@
+.container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.box{
+  height: 150px;
+  width: 150px;
+  border-radius: 50px;
+}
