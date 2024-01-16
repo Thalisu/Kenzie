@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body></body>
+  <script src="./carros.js"></script>
+  <script>
+    const contaTotal = (carros) => carros.length;
+
+    const precoTotal = (carros) => {
+      let total = carros.reduce((total, carro) => {
+        return total + carro.preco;
+      }, 0);
+
+      total = Intl.NumberFormat("br-BR").format(total).replace(/\s/g, "");
+
+      return `A soma do preço de todos veículos é R$ ${total}`;
+    };
+
+    const filtraPorMarca = (carros, marca) =>
+      carros.filter((carro) => carro.marca === marca);
+
+    const filtraPorAcessorio = (carros, acessorio) =>
+      carros.filter((carro) => carro.acessorios.includes(acessorio));
+
+    const eCarroCompleto = () => carros.filter((carro) => carro.completo);
+
+    const adicionaCarro = (carros, carro) => carros.concat(carro);
+
+    const removeCarro = (carros, index) =>
+      index + 1 > carros.length
+        ? "posição invalida"
+        : carros.toSpliced(index, 1);
+
+    const adicionaDono = (carros, index, dono) => {
+      const [carro] = carros.splice(index, 1);
+      return { ...carro, dono };
+    };
+  </script>
+</html>
