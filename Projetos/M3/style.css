@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+html {
+  font-size: 16px;
+  background-color: #e2e2e2;
+}
+.input__box {
+  padding: 2svh;
+  border-radius: 5px;
+  background-color: #ebebeb;
+}
+.input__box:focus {
+  outline: #3b5bdb solid 2px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: center;
+  height: 10svh;
+  background-color: white;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 65svw;
+}
+.header__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: #3b5bdb;
+  font-size: 1.5rem;
+}
+.header__input--search {
+  width: 60%;
+}
+
+.main__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3svh 0;
+}
+
+.form__container,
+.tasks__container {
+  width: 65svw;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+}
+.form__container {
+  margin: 0 0 3svh;
+}
+.form__title {
+  margin: 4% 3% 3%;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.form__input-container {
+  margin: 0 3%;
+  display: flex;
+  justify-content: space-between;
+}
+.form__input--text {
+  width: 63%;
+}
+.form__input--priority {
+  width: 30%;
+}
+.form__button--add-task {
+  margin: 4% 3% 3%;
+  width: 94%;
+  padding: 2svh;
+  font-size: 0.825rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+  background-color: #3b5bdb;
+}
+
+.tasks__container h2 {
+  font-family: "Roboto", sans-serif;
+  margin: 3% 3% 3%;
+}
+.tasks__list {
+  padding: 0 3% 3%;
+}
+.task__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1%;
+  padding: 2%;
+  border-radius: 5px;
+  background-color: #ebebeb;
+}
+.task-info__container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task-type {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.span-urgent {
+  background-color: #e40404;
+}
+.span-important {
+  background-color: #f3a703;
+}
+.span-normal {
+  background-color: #028302;
+}
