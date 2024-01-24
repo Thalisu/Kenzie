@@ -26,13 +26,15 @@ const deleteTask = () => {
   return deleteTodoTask;
 };
 
-for (let i = 0; i < tasks.length; i++) {
-  const task = tasks[i];
+const appendTask = (task) => {
   const taskItem = document.createElement("li");
   taskItem.className = "task__item";
-
   taskItem.appendChild(createTaskContainer(task));
   taskItem.appendChild(deleteTask());
-
   taskList.appendChild(taskItem);
+};
+
+for (let i = 0; i < tasks.length; i++) {
+  const task = tasks[i];
+  appendTask(task);
 }
