@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./resources/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <script src="./script.js" defer></script>
+    <script src="./resources/js/tasks.js"></script>
+    <script src="./resources/js/renderTasks.js" defer></script>
+    <script src="./resources/js/createNewTask.js" defer></script>
   </head>
 
   <body>
@@ -50,35 +52,7 @@
 
       <section class="tasks__container">
         <h2>Tarefas</h2>
-        <ul class="tasks__list">
-          <li class="task__item">
-            <div class="task-info__container">
-              <span class="task-type span-urgent"></span>
-              <p>Comprar comida para o gato</p>
-            </div>
-            <button class="task__button--remove-task">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-          </li>
-          <li class="task__item">
-            <div class="task-info__container">
-              <span class="task-type span-important"></span>
-              <p>Consertar Computador</p>
-            </div>
-            <button class="task__button--remove-task">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-          </li>
-          <li class="task__item">
-            <div class="task-info__container">
-              <span class="task-type span-normal"></span>
-              <p>Beber água</p>
-            </div>
-            <button class="task__button--remove-task">
-              <i class="fa-solid fa-trash"></i>
-            </button>
-          </li>
-        </ul>
+        <ul class="tasks__list"></ul>
       </section>
     </main>
   </body>
