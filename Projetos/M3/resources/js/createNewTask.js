@@ -6,7 +6,7 @@ const createNewTask = (event) => {
   const content = event.target.querySelector("input").value;
   let type = event.target.querySelector("select").options.selectedIndex;
 
-  if (content.length < 4)
+  if (content.length <= 4)
     return alert("o conteúdo da tarefa deve conter pelomenos 4 caracteres");
 
   switch (type) {

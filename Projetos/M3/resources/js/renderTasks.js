@@ -14,10 +14,14 @@ const createTaskContainer = (task) => {
   TaskContainer.appendChild(todoTask);
   return TaskContainer;
 };
-
 const deleteTask = () => {
+  console.log(taskList.querySelector("#0"));
+};
+
+const deleteTaskButton = (taskItem) => {
   const deleteTodoTask = document.createElement("button");
   deleteTodoTask.className = "task__button--remove-task";
+  deleteTodoTask.addEventListener("click", () => taskItem.remove());
 
   const trashIcon = document.createElement("i");
   trashIcon.className = "fa-solid fa-trash";
@@ -30,7 +34,7 @@ const appendTask = (task) => {
   const taskItem = document.createElement("li");
   taskItem.className = "task__item";
   taskItem.appendChild(createTaskContainer(task));
-  taskItem.appendChild(deleteTask());
+  taskItem.appendChild(deleteTaskButton(taskItem));
   taskList.appendChild(taskItem);
 };
 
