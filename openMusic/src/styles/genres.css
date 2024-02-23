@@ -1,0 +1,29 @@
+.genreFilter {
+  padding: 1rem 0;
+  gap: 16px;
+}
+.genreFilter h2 {
+  padding: 2rem 0 0;
+  font-size: 1.5rem !important;
+}
+.genreFilter .buttonsContainer {
+  padding: 0 0 1rem;
+  gap: 25px;
+}
+.genreFilter .buttonsContainer button {
+  background-color: var(--gray-6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.15s, opacity 0.3s;
+  cursor: pointer;
+}
+.genreFilter .buttonsContainer button:not(.selected):hover {
+  background-color: var(--gray-5);
+}
+.genreFilter .buttonsContainer .selected {
+  background-color: var(--gray-2);
+  color: var(--gray-7);
+}
+.genreFilter .buttonsContainer .selected:hover {
+  opacity: 0.9;
+}

@@ -1,0 +1,53 @@
+.albumContainer {
+  padding: 2rem 0 1rem;
+  align-items: center;
+}
+.albumContainer .albums {
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  padding: 2rem 0;
+}
+.albumContainer .albums .album {
+  justify-content: start;
+  width: 300px;
+  aspect-ratio: 3/4;
+  background-color: var(--gray-7);
+  cursor: pointer;
+}
+.albumContainer .albums .album img {
+  height: 65%;
+}
+.albumContainer .albums .album p {
+  font-weight: 600;
+  font-size: 1.175rem;
+  margin: 0.5rem 1rem 0.2rem;
+  color: var(--gray-2);
+}
+.albumContainer .albums .album .about {
+  justify-content: space-between;
+  margin: 0 1rem;
+  margin-bottom: auto;
+  color: var(--gray-3);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+.albumContainer .albums .album .buy {
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gray-2);
+}
+.albumContainer .albums .album .buy button {
+  background-color: var(--brand-2);
+  color: #fff;
+  padding: 0.75rem 0.625rem;
+  border-radius: 5px;
+  transition: background-color 150ms;
+  cursor: pointer;
+}
+
+.albumContainer .albums .album .buy button:hover {
+  background-color: var(--brand-1);
+}

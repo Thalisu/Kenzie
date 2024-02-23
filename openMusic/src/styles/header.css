@@ -1,0 +1,36 @@
+header {
+  position: sticky;
+  width: 100%;
+  padding: 1.5rem 0;
+  justify-content: space-between;
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-bottom: 3px solid var(--brand-1);
+}
+
+header .toggleDarkMode {
+  position: relative;
+  background-color: var(--gray-6);
+  width: 36px;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+header .toggleDarkMode:hover {
+  background-color: var(--gray-5);
+}
+
+header .toggleDarkMode img {
+  position: absolute;
+  opacity: 0;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  width: 16px;
+  aspect-ratio: 1/1;
+}
+header .toggleTheme {
+  opacity: 1 !important;
+}
