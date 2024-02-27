@@ -6,11 +6,15 @@ header {
   font-size: 2.5rem;
   font-weight: 600;
   border-bottom: 3px solid var(--brand-1);
+  color: var(--gray-2);
 }
 
 header .toggleDarkMode {
   position: relative;
   background-color: var(--gray-6);
+  background-image: var(--toggleDarkMode);
+  background-position: center;
+  background-repeat: no-repeat;
   width: 36px;
   aspect-ratio: 1/1;
   border-radius: 10px;
@@ -22,15 +26,6 @@ header .toggleDarkMode:hover {
   background-color: var(--gray-5);
 }
 
-header .toggleDarkMode img {
-  position: absolute;
-  opacity: 0;
-  top: 50%;
-  right: 50%;
-  transform: translate(50%, -50%);
-  width: 16px;
-  aspect-ratio: 1/1;
-}
 header .toggleTheme {
   opacity: 1 !important;
 }
